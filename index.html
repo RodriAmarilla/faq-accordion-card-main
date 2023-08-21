@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
   <main class="envoltura">
@@ -20,15 +17,17 @@
         <div class="envoltura_imagen_interior">
 
         </div>
-        <img class="box" src="/images/illustration-box-desktop.svg" alt="">
+        <img class="caja" src="/images/illustration-box-desktop.svg" alt="">
     </div>
 
 <div class="contenedor_acordeon">
     <h1 class="acordeon_titulo">FAQ</h1>
     <div class="pregunta_acordeon">
         <div class="pregunta_respuesta_acordeon">
+          <div class="pregunta">
             <h3 class="titulo_pregunta">How many team members can I invite?</h3>
             <img src="/images/icon-arrow-down.svg" alt="">
+          </div>
         </div>
         <div class="respuesta">You can invite up to 2 additional users on the Free plan. There is no limit on 
           team members for the Premium plan.
@@ -36,16 +35,20 @@
     </div>
     <div class="pregunta_acordeon">
       <div class="pregunta_respuesta_acordeon">
+        <div class="pregunta">
           <h3 class="titulo_pregunta">What is the maximum file upload size?</h3>
           <img src="/images/icon-arrow-down.svg" alt="">
+        </div>
       </div>
       <div class="respuesta">No more than 2GB. All files in your account must fit your allotted storage space.
       </div>  
     </div>
     <div class="pregunta_acordeon">
       <div class="pregunta_respuesta_acordeon">
+        <div class="pregunta">
           <h3 class="titulo_pregunta">How do I reset my password?</h3>
           <img src="/images/icon-arrow-down.svg" alt="">
+        </div>
       </div>
       <div class="respuesta">Click “Forgot password” from the login page or “Change password” from your profile page.
         A reset link will be emailed to you.
@@ -53,16 +56,20 @@
     </div>
     <div class="pregunta_acordeon">
       <div class="pregunta_respuesta_acordeon">
+        <div class="pregunta">
           <h3 class="titulo_pregunta">Can I cancel my subscription?</h3>
           <img src="/images/icon-arrow-down.svg" alt="">
+        </div>
       </div>
       <div class="respuesta">Yes! Send us a message and we’ll process your request no questions asked.
       </div>  
     </div>
     <div class="pregunta_acordeon">
       <div class="pregunta_respuesta_acordeon">
+        <div class="pregunta">
           <h3 class="titulo_pregunta">Do you provide additional support?</h3>
           <img src="/images/icon-arrow-down.svg" alt="">
+        </div>
       </div>
       <div class="respuesta">Chat and email support is available 24/7. Phone lines are open during normal business hours.
       </div>  
