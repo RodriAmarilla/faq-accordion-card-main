@@ -1,5 +1,4 @@
-@import url(https://fonts.google.com/specimen/Kumbh+Sans);
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root{
     --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
     --softRed: hsl(14, 88%, 65%);
@@ -11,7 +10,9 @@
     --fontSize: 12px; 
 }
 
-* {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -44,13 +45,23 @@ body {
     background-position: 1260% 65%;
 }
 
-
-.respuesta {
+.pregun-respues__acordeon > .respuesta {
     display: none;
+} 
+
+.active > .respuesta {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
 }
 
 .contenedor_acordeon {
-    margin-top: 70px;
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +72,7 @@ body {
     flex-direction: column;
 }
 
-.pregunta_respuesta_acordeon {
+.pregun-respues__acordeon {
     width: 350px;
     border-bottom: 1px solid #e8e8ea;
 }
@@ -83,7 +94,11 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.4s;
+}
+
+.active h3 {
+    font-weight: 700;
 }
 
 .pregunta img {
@@ -105,4 +120,49 @@ body {
     position: absolute;
     top: 42%;
     left: -25%;
+}
+
+@media (max-widtg: 700px) {
+    .envoltura{
+        width: 350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-gap: 0.5rem;
+        position: relative;
+        padding: 1rem;
+        height: 530px;
+    }
+
+    .envoltura_imagen {
+        background: url("/images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center 590%;
+    }
+
+    .envoltura_imagen_interior {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        background-size: 72%;
+        background-position: center;
+        top: -128%;
+    }
+
+    .caja {
+        width: 55px;
+        left: 19%;
+        top: -30%;
+    }
+
+    .contenedor_acordeon {
+        margin-top: 0px;
+    }
+
+    .pregun-respues__acordeon {
+        width: 100%;
+    }
+
+    .acordeon_titulo {
+        text-align: center;
+    }
 }
