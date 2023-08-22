@@ -40,7 +40,7 @@ body {
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-gap: 6rem;
-    background-image: url(/images/bg-pattern-desktop.svg);
+    background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-position: 1260% 65%;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .envoltura_imagen_interior {
-    background: url(/images/illustration-woman-online-desktop.svg);
+    background: url(images/illustration-woman-online-desktop.svg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: 120% center;
@@ -134,7 +134,7 @@ body {
     }
 
     .envoltura_imagen {
-        background: url("/images/bg-pattern-mobile.svg");
+        background: url("images/bg-pattern-mobile.svg");
         background-repeat: no-repeat;
         background-position: center 590%;
     }
